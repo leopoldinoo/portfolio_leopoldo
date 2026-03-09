@@ -1,9 +1,13 @@
-import StarParticles from "@/components/background/StarParticles";
+import ParticleBackgrounds from "@/components/backgrounds/ParticleBackground.jsx";
 import Image from "next/image";
+import Header from "@/components/Header.jsx";
+import HeroSection from "@/components/HeroSection.jsx";
 export default function Home() {
   return (
     <main>
-      <StarParticles />
+      <Header></Header>
+      <HeroSection></HeroSection>
+      <ParticleBackgrounds />
     </main>
   );
 }
