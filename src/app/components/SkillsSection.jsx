@@ -11,10 +11,11 @@ const skills = [
   {name: "Tailwind", level: 80, color: "from-teal-500 to-teal-400" },
   {name: "PHP", level: 30, color: "from-gray-500 to-gray-400" },
   {name: "SQL", level: 60, color: "from-purple-500 to-purple-400" },
+  {name: "Git e GitHub", level: 80, color: "from-pink-500 to-pink-400" },
 ];
 export default function SkillsSection() {
 return (
-  <section id="skills" className="relative py-32 px-6">
+  <section id="skills" className="relative py-20 px-6">
     <div className="max-w-6xl mx-auto">
       <motion.div
         initial={{ opacity: 0, y: 40}}

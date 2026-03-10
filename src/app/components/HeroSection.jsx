@@ -27,16 +27,16 @@ export default function HeroSection() {
   const [isTypingComplete, setIsTypingComplete] = useState(false);
 
   return (
-    <section className="relative flex flex-col items-center justify-center min-h-screen text-center px-4 overflow-hidden">
+    <section className="relative flex flex-col items-center justify-center min-h-160 text-center px-4 overflow-hidden">
 
       {/* Círculo de brilho suave no fundo para profundidade */}
-      <div className="absolute w-[500px] h-[500px] bg-blue-500/10 rounded-full blur-[120px] -z-10" />
+      <div className="absolute w-[250px] h-[250px] bg-blue-500/10 rounded-full blur-[120px] -z-10" />
 
       <motion.h1
         initial={{ opacity: 0, y: -10 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.6, ease: "easeOut" }}
-        className="text-5xl md:text-7xl font-extrabold bg-clip-text text-transparent bg-gradient-to-r from-blue-300 via-purple-400 to-blue-200 mb-6"
+        className="text-5xl md:text-6xl font-extrabold bg-clip-text text-transparent bg-gradient-to-r from-blue-300 via-purple-400 to-blue-200 mb-6"
       >
         <TypingText
           text="Olá, Eu Sou o Otávio Leopoldino"
@@ -68,7 +68,7 @@ export default function HeroSection() {
         }}
         className="mt-10"
       >
-        <a href="#projetos" className="px-8 py-3 bg-white text-black font-semibold rounded-full hover:bg-blue-400 transition-colors hover:scale-105">
+        <a href="#projects" className="px-8 py-3 bg-white text-black font-semibold rounded-full hover:bg-blue-400 transition-colors hover:scale-105">
           Ver Projetos
         </a>
       </motion.div>
